@@ -14,10 +14,10 @@ public class ProductSearchApp {
                 String[] values = line.split(",");
                 if (values.length >= 5) {
                     String SKU = values[0];
-                    double priceRetail = Double.parseDouble(values[1]);
-                    double priceCurrent = Double.parseDouble(values[2]);
-                    String productName = values[3];
-                    String category = values[4];
+                    double priceRetail = Double.parseDouble(values[9]);
+                    double priceCurrent = Double.parseDouble(values[10]);
+                    String productName = values[19];
+                    String category = values[0];
 
                     Product product = new Product(SKU, priceRetail, priceCurrent, productName, category);
                     bst.insert(product);
